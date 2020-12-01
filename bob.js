@@ -5,11 +5,11 @@ class Bob {
     restituiton:0.8
     }
     this.radius=r;
-    this.bobObject1=Bodies.circle(700,600,30,options);
-    World.add(world,this.bobObject1);
+    this.bob=Bodies.circle(x,y,r,options);
+    World.add(world,this.bob);
     }
     display(){
-        var pos=this.body.position;
+        var pos=this.bob.position;
         push();
         translate(pos.x, pos.y);
         
